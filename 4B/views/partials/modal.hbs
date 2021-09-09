@@ -1,0 +1,124 @@
+{{! Login }}
+<div
+  class="modal fade"
+  id="loginModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-flex flex-column align-items-center">
+        <h1 class="modal-title" id="exampleModalLabel">Login</h1>
+      </div>
+      <div class="modal-body">
+        <div class="form d-flex flex-column align-items-center">
+          <form action="/login" method="post">
+            <div class="username-input mb-5">
+              <input type="text" placeholder="Email or Username" name="user" />
+            </div>
+            <div class="password-input mb-5">
+              <input type="password" placeholder="Password" name="password" />
+            </div>
+            <div class="btn-register mb-2">
+              <button type="submit">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{! Register }}
+<div
+  class="modal fade"
+  id="registerModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-flex flex-column align-items-center">
+        <h1 class="modal-title" id="exampleModalLabel">Create Account</h1>
+      </div>
+      <div class="modal-body">
+        <div class="form d-flex flex-column align-items-center">
+          <form action="/register" method="post">
+            <div class="username-input mb-5">
+              <input type="email" placeholder="Email" name="email" />
+            </div>
+            <div class="password-input mb-5">
+              <input type="text" placeholder="Username" name="username" />
+            </div>
+            <div class="password-input mb-5">
+              <input type="password" placeholder="Password" name="password" />
+            </div>
+            <div class="btn-register mb-2">
+              <button type="submit">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{! Add Task }}
+<div
+  class="modal fade"
+  id="taskModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-flex flex-column align-items-center">
+        <h1 class="modal-title" id="exampleModalLabel">Add Task</h1>
+      </div>
+      <div class="modal-body">
+        <div class="form d-flex flex-column align-items-center">
+          <form action="/addTask" method="post">
+            <div class="username-input mb-5">
+              <input type="text" placeholder="Add Task" name="name" />
+            </div>
+            <div class="btn-register mb-2">
+              <button type="submit">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{! Add Collections }}
+<div
+  class="modal fade"
+  id="collectionsModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-flex flex-column align-items-center">
+        <h1 class="modal-title" id="exampleModalLabel">Add Collections</h1>
+      </div>
+      <div class="modal-body">
+        <div class="form d-flex flex-column align-items-center">
+          <form action="/addCollections" method="post">
+            <div class="username-input mb-5">
+              <input type="text" placeholder="Add Task" name="name" />
+            </div>
+            <div class="btn-register mb-2">
+              <button type="submit">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

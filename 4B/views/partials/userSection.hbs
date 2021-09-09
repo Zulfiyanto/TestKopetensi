@@ -1,0 +1,30 @@
+<div class="col-3 p-none border-left">
+  <div class="navigation mb-3">
+    <div class="title d-flex justify-content-center">
+      <h1>User</h1>
+    </div>
+  </div>
+  {{! Body-user }}
+  <div class="body-col d-flex">
+    {{#if isLogin}}
+      <div class="user-show">
+        <img src="/public/user.svg" alt="" />
+        <h1>{{user}}</h1>
+        <p>{{data.email}}</p>
+      </div>
+    {{else}}
+      <div class="action-user d-flex align-items-center flex-column">
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#loginModal"
+        >Login</button>
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#registerModal"
+        >Register</button>
+      </div>
+    {{/if}}
+  </div>
+</div>

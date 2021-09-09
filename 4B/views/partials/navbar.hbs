@@ -1,0 +1,30 @@
+<div class="navigation d-flex align-items-center mb-3">
+  <div class="title d-flex justify-content-center">
+    <h1>Collections</h1>
+  </div>
+  <div class="actions">
+    {{#if isLogin}}
+      <div class="dropdown">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          ◾◾◾
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a
+              class="dropdown-item"
+              data-bs-toggle="modal"
+              data-bs-target="#collectionsModal"
+              href="/addCollections"
+            >Add Collections</a></li>
+          <li><a class="dropdown-item" href="/logout">Log Out</a></li>
+        </ul>
+      </div>
+    {{/if}}
+  </div>
+</div>

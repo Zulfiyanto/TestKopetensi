@@ -1,0 +1,18 @@
+{{#each collections}}
+  <div class="card-core">
+    <a href="/tasks/{{this.id}}">
+      <div class="title-pict d-flex">
+        <img src="/public/icon.svg" alt="" />
+        <h3>{{name}}</h3>
+      </div>
+      <div class="tas-del d-flex">
+        <div class="card-sum">
+          <p>2/5 tasks</p>
+        </div>
+        <div class="del">
+          <a href="/deleteS/{{this.id}}">🗑</a>
+        </div>
+      </div>
+    </a>
+  </div>
+{{/each}}

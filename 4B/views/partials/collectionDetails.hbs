@@ -1,0 +1,44 @@
+ <div class="col-9 p-none">
+   {{! navigation }}
+   {{> navbar}}
+   {{! body-collections }}
+   <div class="body-col">
+     <div class="body-colect">
+       <div class="parent">
+         <div class="add-btn">
+           <button type="button" data-bs-toggle="modal" data-bs-target="#taskModal">Add</button>
+         </div>
+         <div class="left">
+           <div class="box">
+             {{#each tasks}}
+             {{#if this.isDone}}
+             <div class="task-card-confirm">
+               <a href="/delete/{{this.id}}">
+                 <button>✖</button>
+                 </a>
+               <div class="title-task">{{this.name}}</div>
+               <div class="confirm-task">
+               </div>
+             </div>
+             {{else}}
+             <div class="task-card">
+               <div class="btn">
+                 <a href="/delete/{{this.id}}">
+                 <button>✖</button>
+                 </a>
+               </div>
+               <div class="title-task">{{this.name}}</div>
+               <div class="confirm-task">
+                  <div class="btn">
+                   <button>✔</button>
+                 </div>
+               </div>
+             </div>
+             {{/if}}
+             {{/each}}
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>

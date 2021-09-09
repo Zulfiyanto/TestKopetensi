@@ -1,0 +1,16 @@
+{{> header}}
+    <div class="container-fluid">
+      <div class="row">
+            {{#if message}}
+                <div class="alert alert-{{message.type}} absolute"  role="alert">
+                {{message.message}}
+                </div>
+            {{/if}}
+
+        {{> userSection}}
+        {{> collectionSection}}
+        
+      </div>
+    </div>
+    {{> modal}}
+{{> script}}
